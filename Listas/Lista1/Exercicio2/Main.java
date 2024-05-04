@@ -28,15 +28,14 @@ public class Main{
 
     public static void imprimirMapa(){
         for(int i = 0; i < TAMANHO_MAPA; i++){
-            System.out.print("|");
             for(int j = 0; j < TAMANHO_MAPA; j++){
                 if(mapa[i][j]){
-                    System.out.print("X|");
+                    System.out.print("|O");
                 } else{
-                    System.out.print("O|");
+                    System.out.print("|X");
                 }
             }
-            System.out.println();
+            System.out.println("|3");
         }
     }
 }
