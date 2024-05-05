@@ -5,6 +5,7 @@ public class Main{
     public static String[] respostas = new String[QUANTIDADE_PERGUNTAS];
     public static String[] gabarito = new String[QUANTIDADE_PERGUNTAS];
     public static final Scanner SCAN = new Scanner(System.in);
+
     public static void main(String[] args){
         String nome = receberNome();
         explicarQuiz(nome);
@@ -115,7 +116,7 @@ public class Main{
 
         for(int i = 0; i < QUANTIDADE_PERGUNTAS; i++){
             System.out.println(String.format("Pergunta %s | Respondido: %s | Correto: %S", (i+1), respostas[i], gabarito[i]));
-            if(respostas[i] == gabarito[i]){
+            if(respostas[i].equalsIgnoreCase(gabarito[i])){
                 somatorioAcertos++;
             }
         }
@@ -136,7 +137,7 @@ public class Main{
         System.out.println(String.format(
             """
 
-            Obrigado pela participação no quiz, %s
+            Obrigado pela participação no quiz, %s <3Na
             Tchau!! :D
             """,
             nome
