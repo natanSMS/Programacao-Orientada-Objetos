@@ -14,7 +14,7 @@ public class App {
         if(nome1.equals(nome2)) {
             System.out.println("As palavras sao identicas");
         } else if (nome1.equalsIgnoreCase(nome2)) {
-            System.out.println("As palavras sao iguais ignorando maisculo e minusculo");
+            System.out.println("As palavras sao iguais ignorando maiusculo e minusculo");
         } else {
             System.out.println("As palavras sao diferentes");
         }
