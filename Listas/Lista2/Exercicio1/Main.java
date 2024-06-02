@@ -137,7 +137,7 @@ public class Main{
         System.out.println(String.format(
             """
 
-            Obrigado pela participação no quiz, %s <3Na
+            Obrigado pela participação no quiz, %s <3
             Tchau!! :D
             """,
             nome
